@@ -1,0 +1,7 @@
+archetype,start_epc,target_epc,cost_low_gbp_m2_2017,cost_high_gbp_m2_2017,package,source_ref
+Office 1 pre-1940 naturally ventilated,F,B,220,250,fabric+services to EPC B,IPF 2017 Fig/Table (offices)
+Office 2 early-1990s air-conditioned,F,B,200,250,fabric+services to EPC B,IPF 2017 Fig/Table (offices)
+Office 3 post-2002 highly glazed AC,F,B,260,260,fabric+services to EPC B,IPF 2017 Fig/Table (offices)
+Office 4 post-2006 highly glazed AC,E,B,200,200,services-led to EPC B,IPF 2017 Fig/Table (offices)
+Retail warehouse,D,B,100,350,lower-cost vs deeper fabric+services,IPF 2017 Fig/Table (retail warehouse)
+Industrial/storage warehouse,G,B,80,120,fabric+services to EPC B,IPF 2017 Fig/Table (industrial)

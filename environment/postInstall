@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Install once while Code Ocean builds the Capsule environment. The build phase
+# cannot read /code or /data, so the lock is included under /environment.
+set -euo pipefail
+
+python3 -m pip install --no-cache-dir -r /environment/requirements-lock.txt
+python3 -m pip check

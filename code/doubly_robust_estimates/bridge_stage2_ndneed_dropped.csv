@@ -1,0 +1,8 @@
+,value
+n_dropped,170
+total_floor_area_m2,249206.0
+n_eligible_among_dropped,115
+eligible_floor_area_m2,207550.0
+sector_top,"{'Warehouses': 63, 'Shops': 41, 'Factories': 20, 'Offices': 19, 'Arts, Community and Leisure': 6, 'Other': 5}"
+size_dist,"{'>100-250 m2': 58, '>50-100 m2': 33, '>1,000-5,000 m2': 30, '>250-500 m2': 15, '0-50 m2': 13, '>500-1,000 m2': 12, '>5,000 m2': 9}"
+la_labels,{'Dumfries and Galloway': 1}

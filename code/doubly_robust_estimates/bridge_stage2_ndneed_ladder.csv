@@ -1,0 +1,6 @@
+spec,margins,iters,resid_imbalance,sum_wfull,sum_w_elig_pre,elig_share_Bplus,NT,ess_full,ess_elig,top1pct,top5pct,top10pct,wmean_fa,plug_count,dr_count,corr_count,plug_area_Mm2,dr_area_Mm2,corr_area_Mm2
+register (Stage-1),register,0,0.0,842503,118750.0,0.1409,118750,842503.0,118750.0,0.01,0.05,0.1,893.2,94696,94815,118,64.79,57.64,-7.15
+ND sector-only,sector_benchmark,10,0.0,842503,116664.3,0.1385,118750,470746.0,67113.0,0.078,0.175,0.26,1093.6,93550,93705,154,78.27,65.76,-12.52
+ND size-only,size_benchmark,12,0.0,842503,114043.5,0.1354,118750,683796.0,96485.0,0.024,0.121,0.222,608.8,98092,98585,493,44.98,42.29,-2.69
+ND sector+size,sector_benchmark+size_benchmark,21,0.0,842503,110676.0,0.1314,118750,331387.0,46578.0,0.093,0.212,0.317,624.9,97926,98730,804,46.75,43.91,-2.84
+ND sector+size+region,sector_benchmark+size_benchmark+region_benchmark,21,0.0,842503,109906.5,0.1305,118750,328482.0,44480.0,0.096,0.219,0.325,624.0,97825,98600,775,46.69,43.91,-2.78

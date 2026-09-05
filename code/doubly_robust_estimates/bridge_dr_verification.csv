@@ -1,0 +1,8 @@
+scenario,estimate,note
+true_target_count,985.2,ground truth
+outcome_only_plugin,999.7,correct outcome model
+ipw_only,1040.6,membership weights only
+dr_correct_outcome,1001.4,AIPW with correct outcome
+dr_misspecified_outcome,1040.6,AIPW recovers via weights (double robustness)
+dr_mean_one_normalization,1001.4,scaling check
+dr_sum_to_NT_normalization,1001.4,scaling check (identical)

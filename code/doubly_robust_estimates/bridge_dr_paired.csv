@@ -1,0 +1,8 @@
+comparison,paired_median_pp,lo,hi,win_pct,note
+absDR_minus_absPlugin_C,-10.2,-11.7,-8.6,100,strict cross-fitted
+absDR_minus_absIO_C,-8.8,-10.7,-6.6,100,
+absDR_minus_absPlugin_D,-13.2,-17.2,-9.2,100,
+absDR_minus_absIO_D,-19.9,-23.1,-16.9,100,
+absDRC_minus_absDRD,-1.7,-4.5,1.2,80,within 2pp margin; C favored
+dr_residual_correction_C,-10.7,,,,cross-fitted
+dr_residual_correction_D,-17.3,,,,cross-fitted

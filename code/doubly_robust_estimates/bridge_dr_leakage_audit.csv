@@ -1,0 +1,6 @@
+test,result
+dr_area_unchanged_when_heldout_outcomes_zeroed,PASS
+dr_area_unchanged_when_heldout_outcomes_permuted,PASS
+residual_correction_indices_intersect_heldout,0 (PASS)
+residual_correction_set_equals_training_set,True (PASS)
+source_predictions_cross_fitted,yes

@@ -1,0 +1,7 @@
+frame,target_denominator,model,estimator,role,expected_count,affected_area_Mm2
+complete_eligible_EPCB,118865,C,doubly_robust_crossfitted,PRIMARY,94911,57.24
+complete_eligible_EPCB,118865,D,doubly_robust_crossfitted,architecture_sensitivity,95866,54.94
+complete_eligible_EPCB,118865,C,inverse_odds_weighted_outcome,estimator_sensitivity_overpredicts,94919,61.27
+complete_eligible_EPCB,118865,C,unweighted,estimator_sensitivity_overpredicts,94770,64.85
+FG_count_eligible,316293,C,doubly_robust_crossfitted,PRIMARY_count,36847,9.10
+FG_count_eligible,316293,D,doubly_robust_crossfitted,architecture_sensitivity,37783,9.26

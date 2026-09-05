@@ -1,0 +1,17 @@
+.DS_Store
+.venv/
+.cache/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Generated analysis results are captured by Code Ocean from /results.
+outputs/
+results/
+
+# The input data bundle under data/ is versioned in the repository. Large
+# *.parquet files are stored via Git LFS (see .gitattributes).

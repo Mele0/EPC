@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# Code Ocean Reproducible Run driver.  This file intentionally does no analysis;
+# it establishes the capsule paths and delegates to the single Python entry point.
+set -euo pipefail
+
+code_dir="$(cd -P -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
+capsule_root="$(dirname -- "${code_dir}")"
+
+if [[ -d /data && -d /results && -d /scratch ]]; then
+    if [[ -d /data/epc_mirage_inputs ]]; then
+        default_data_dir=/data/epc_mirage_inputs
+    else
+        default_data_dir=/data
+    fi
+    default_output_dir=/results
+    default_scratch_dir=/scratch
+else
+    default_data_dir="${capsule_root}/data"
+    default_output_dir="${capsule_root}/outputs"
+    default_scratch_dir="${capsule_root}/.cache"
+fi
+
+export EPC_DATA_DIR="${EPC_DATA_DIR:-${default_data_dir}}"
+export EPC_OUTPUT_DIR="${EPC_OUTPUT_DIR:-${default_output_dir}}"
+export EPC_SCRATCH_DIR="${EPC_SCRATCH_DIR:-${default_scratch_dir}}"
+export MPLBACKEND="${MPLBACKEND:-Agg}"
+export PYTHONHASHSEED="${PYTHONHASHSEED:-0}"
+export PYTHONDONTWRITEBYTECODE="${PYTHONDONTWRITEBYTECODE:-1}"
+export PYTHONUNBUFFERED="${PYTHONUNBUFFERED:-1}"
+export PYTHONPATH="${code_dir}/src${PYTHONPATH:+:${PYTHONPATH}}"
+export OPENBLAS_NUM_THREADS="${EPC_NUM_THREADS:-1}"
+export OMP_NUM_THREADS="${EPC_NUM_THREADS:-1}"
+export MKL_NUM_THREADS="${EPC_NUM_THREADS:-1}"
+export NUMEXPR_NUM_THREADS="${EPC_NUM_THREADS:-1}"
+export BLIS_NUM_THREADS="${EPC_NUM_THREADS:-1}"
+python_bin="${EPC_PYTHON:-python3}"
+
+"${python_bin}" -c 'import sys; assert sys.version_info >= (3, 11), "Python 3.11 or newer is required"'
+mkdir -p -- "${EPC_OUTPUT_DIR}" "${EPC_SCRATCH_DIR}"
+
+exec "${python_bin}" "${code_dir}/scripts/reproduce_all.py" "$@"

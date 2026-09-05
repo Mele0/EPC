@@ -1,0 +1,4 @@
+method,ess,ess_total,max_smd_continuous,C_area_Mm2,note
+full_constraint_set,2,1110,,,collinear collapse (unusable)
+reduced_rank_first_moments,1060,1110,0.216,62.91,no collapse but weaker balance than inverse-odds
+inverse_odds,857,1110,0.032,61.27,preferred (meets balance+ESS rule)

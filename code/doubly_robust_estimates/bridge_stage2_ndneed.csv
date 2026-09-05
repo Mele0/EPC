@@ -1,0 +1,5 @@
+target,functional,plugin,dr,dr_correction,note
+register_stage1,count,94770,94911,141,Stage-1 register-conditional (principal)
+register_stage1,area_Mm2,64.85,57.24,-7.61,
+ndneed_reweighted,count,97898,98754,856,Stage-2 external-composition sensitivity (register-standardized)
+ndneed_reweighted,area_Mm2,46.75,43.72,-3.03,source weights refit to ND-NEED-reweighted target

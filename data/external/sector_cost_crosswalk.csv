@@ -1,0 +1,11 @@
+register_sector,ipf_archetype,matched,cost_low_gbp_m2_2017,cost_central_gbp_m2_2017,cost_high_gbp_m2_2017,note
+Offices,Office archetypes 1-4,yes,200,230,260,mapped to IPF office range (age/AC unresolved in register)
+Factories,Industrial/storage warehouse,yes,80,100,120,industrial archetype
+Warehouses,Industrial/storage warehouse,yes,80,100,120,storage/distribution -> industrial archetype
+Shops,,no,,,,general retail not comparable to IPF retail-warehouse archetype; unmatched
+Hospitality,,no,,,,no IPF archetype (restaurants/hotels)
+Education,,no,,,,no IPF archetype
+Health,,no,,,,no IPF archetype
+Arts Community and Leisure,,no,,,,no IPF archetype
+Emergency Services,,no,,,,no IPF archetype
+Other,,no,,,,no IPF archetype

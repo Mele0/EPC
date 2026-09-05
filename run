@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Compatibility entry point for Code Ocean's Clone from Git layout, where the
+# repository itself may be mounted under /code. Copy from Git uses code/run.
+set -euo pipefail
+
+repo_root="$(cd -P -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
+exec "${repo_root}/code/run" "$@"
